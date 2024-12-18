@@ -4,7 +4,7 @@ import React from 'react';
 import FloatingButton from './FloatingButton';
 
 
-export function initCamieFloatingButton(config: any = {}) {
+export function initCamieFloatingButton(config = {}) {
   if (typeof window !== 'undefined') {
     const container = document.createElement('div');
     container.id = 'camie-floating-button-container';
@@ -22,5 +22,5 @@ export function initCamieFloatingButton(config: any = {}) {
 }
 
 if (typeof window !== 'undefined') {
-  (window as any).initCamieFloatingButton = initCamieFloatingButton;
+  (window ).initCamieFloatingButton = initCamieFloatingButton;
 }

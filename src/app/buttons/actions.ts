@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import Vapi from "@vapi-ai/web";
 
 const token = process.env.NEXT_PUBLIC_SAVI_VAPI_PU_KEY || "";

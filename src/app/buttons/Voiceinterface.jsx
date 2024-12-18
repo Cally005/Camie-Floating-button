@@ -14,7 +14,7 @@ export default function VoiceInterface() {
   const [connected, setConnected] = useState(false);
   const [bookMeeeting, setBookMeeting] = useState(false);
   const [meetingResponse, setMeetingResponse] = useState(null);
-  const vapi = new Vapi(process.env.NEXT_PUBLIC_VAPI_PUBLIC_KEY as string)
+  const vapi = new Vapi(process.env.NEXT_PUBLIC_VAPI_PUBLIC_KEY)
   const [assistantIsSpeaking, setAssistantIsSpeaking] = useState(false);
 
 
@@ -75,7 +75,7 @@ export default function VoiceInterface() {
       setMicPermission(true);
       
       // Start the Vapi call
-      const data = await vapi.start(assistantOptions as object);
+      const data = await vapi.start(assistantOptions);
       console.log(data);
     } catch (error) {
       // Handle permission denial or other errors
@@ -280,7 +280,7 @@ export default function VoiceInterface() {
   }
   
   // Modal component remains unchanged
-  const Modal = ({ isOpen, setOpen, vapiResponse }:{isOpen: boolean; setOpen:  any; vapiResponse: any}) => {
+  const Modal = ({ isOpen, setOpen, vapiResponse }) => {
     const closeModal = () => {
       setOpen(false);
       vapiResponse(

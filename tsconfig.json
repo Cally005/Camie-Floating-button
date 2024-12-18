@@ -35,7 +35,7 @@
     "**/*.tsx",
     "next-env.d.ts",
     ".next/types/**/*.ts"
-, "src/app/buttons/ChatInterface.jsx", "src/app/buttons/FloatingButton.jsx"  ],
+, "src/app/buttons/ChatInterface.jsx", "src/app/buttons/FloatingButton.jsx", "src/app/buttons/Voiceinterface.jsx", "src/app/buttons/widget.jsx"  ],
   "exclude": [
     "node_modules"
   ]
