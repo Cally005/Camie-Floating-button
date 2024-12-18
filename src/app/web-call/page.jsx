@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import ActiveCallDetail from "@/components/app/callDetails";
 import { startCall, endCall, useVapiEvents } from "./actions";
 
 const WebCall = () => {
